@@ -1,0 +1,21 @@
+h1{
+    color:darkcyan;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Georgia;
+    background-color: aquamarine;
+   
+}
+a:link,a:visited{
+    background-color: bisque;
+    color:blueviolet;
+    padding: 20px 20px;
+   text-decoration: double;
+   font-family: Verdana;
+   font-weight: bolder;
+   display: inline-block;
+   margin:50px;
+}
+a:hover,a:active{
+    background-color:brown;
+}

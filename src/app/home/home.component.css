@@ -1,0 +1,14 @@
+h1{
+    color:darkturquoise;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bolder;
+    background-color:cadetblue;
+}
+h2{
+    color:deepskyblue;
+    font-family: Arial;
+    font-variant: small-caps;
+    background-color: chocolate;
+}

@@ -1,0 +1,12 @@
+h2{
+    color:brown;
+    text-align:center;
+}
+h1{
+    color:aquamarine;
+    text-align:center;
+    text-transform: uppercase;
+    font-family:  Courier;
+    font-style: oblique ;
+    background-color: steelblue;
+}

@@ -1,0 +1,21 @@
+<h1>WELCOME to homepage</h1><br>
+{{today|date:'d/m/y'}}<br><br>
+Name: <input type="text"><br><br>
+FatherName: <input type="text"><br><br>
+Date of Birth: <input type="text"><br><br>
+Account Number: <input type="text"><br><br>
+Address: <input type="text"><br><br>
+Pin: <input type="text"><br><br>
+<h2>Template Driven Forms</h2><br><br>
+<form #login="ngForm" (ngSubmit)="onsubmit(login.value)">
+   E-mail: <input type="email" name="email" placeholder="email_id" ngModel><br><br>
+   Password: <input type="password" name="password" placeholder="password" ngModel><br><br>
+    <input type="submit" value="submit">
+</form><br><br>
+<h2>Reactive or Model Driven Forms</h2><br><br>
+<form appForm [formGroup]="form" (ngSubmit)="submit()">
+    FirstName:<input formControlName="first" id="first"><br><br>
+    LastName:<input formControlName="last" id="last"><br><br>
+    FatherName:<input formControlName="fathername" id="fathername" placeholder="fathername"><br><br>
+    <button>submit</button>
+</form>

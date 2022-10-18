@@ -1,0 +1,30 @@
+<h1>welcome to my levelpage</h1><br>
+<p>level works!</p><br><br>
+{{today|date}}<br><br>
+firstname:  <input type="text"  value="{{firstname}}"><br><br>
+lastname: <input type="text"  [(ngModel)]="lastname"><br><br>
+submit: <input type="button" (click)="print($event)" value="print"><br><br>
+surname: <input type="text" id="surname"><br><br>
+print: <input type="button" (mouseover)="check($event)" value="check"><br><br>
+
+<span *ngIf="status;else condition;">condition is correct</span>
+<ng-template #condition>condition is false</ng-template><br>
+
+<h2>List of Cars:</h2><br>
+<p *ngFor="let car of cars">{{car}}</p><br>
+
+<h2>List of Televisions:</h2><br>
+<select (change)="data($event)">
+    <option *ngFor="let televisions of television">{{televisions}}</option>
+</select><br><br>
+Uppercase:{{firstname|uppercase}}<br><br>
+Lowercase:{{name|lowercase}}<br><br>
+Date:{{today}}<br><br>
+{{today|date:'d/m/y'}}<br><br>
+{{today|date:'hh:mm:ss'}}<br><br>
+{{today|date:'hh:mm'}}<br><br>
+{{today|date:'shortTime' }}<br><br>
+{{today|date:'longTime'}}<br><br>
+Currency:{{aadhar|currency:'USD'}}<br><br>
+{{aadhar|currency:'INR'}}<br><br>
+Percent:{{num|percent}}<br><br>
