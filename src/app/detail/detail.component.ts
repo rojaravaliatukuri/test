@@ -8,7 +8,7 @@ import { User } from '../user';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-name:"";
+
   users:User[]=[];
   constructor(private dataservice:DataserviceService) { }
 
